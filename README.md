@@ -1,6 +1,6 @@
 롤 챔피언 판테온에 대한 소개입니다.
 ----
-![Pantheon_default_skin](image/README.jpg)
+![Pantheon_default_skin](image/README.jpeg)
 
 "진정한 전사를 데려오든지, 네놈 같은 자들을 백 명은 더 데려와라. 세상 마지막까지 전설로 남을 전투를 벌여보자."
 
