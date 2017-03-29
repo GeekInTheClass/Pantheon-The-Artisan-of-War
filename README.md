@@ -8,6 +8,7 @@
 -
 
 ## Contents
+1  [소개](Relationship.md "Relationship")
 
 1  [챔피언 관계](Relationship.md "Relationship")
 
@@ -15,6 +16,6 @@
 
 3. [단점](Shortcoming.md "Shortcoming")
 
-4. [평가](Shortcoming.md "Shortcoming")
+4. [평가](Evaluation.md "Evaluation")
 
 	
