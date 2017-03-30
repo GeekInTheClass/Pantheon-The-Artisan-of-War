@@ -11,11 +11,11 @@ import UIKit
  
  print(result_1)
  
-//Q2. 1부터 10까지 짝수의 합
+//Q2. 1부터 10까지 짝수의 제곱의 합
  var result_2 = 0
  for i in 1...10 {
     if i%2 == 0 {
-        result_2 += i
+        result_2 += i*i
     }
  }
  print(result_2)
