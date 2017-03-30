@@ -3,50 +3,51 @@
 import UIKit
 
 //Q1. 1부터 10까지 정수의 합
- var result_1 = 0
+
+ var arr_1 = [1,2,3,4,5,6,7,8,9,10]
+ var res_1 = arr_1.reduce(0,+)
  
- for i in 1...10 {
-    result_1 += i
- }
- 
- print(result_1)
+ print(res_1)
  
 //Q2. 1부터 10까지 짝수의 제곱의 합
- var result_2 = 0
- for i in 1...10 {
-    if i%2 == 0 {
-        result_2 += i*i
-    }
+ //A2.
+ var arr_2 = [1,2,3,4,5,6,7,8,9,10]
+ var res_2 = (1...10).filter{$0 % 2==0}.reduce(0) { (Result:Int, a:Int) -> Int in
+    return Result + a*a
  }
- print(result_2)
+ 
+ print(res_2)
  
  //Q3. 배열 원소의 합
  let array = [1,3,5,4,2]
- var sum = 0
- for i in array {
-    sum+=i
+ 
+ var res_3 = array.reduce(0) { (Result, a:Int) -> Int in
+    return Result + a
  }
- print(sum)
+ 
+ print(res_3)
  
  //Q4 .  구구단 출력
- var temp = 0
- for i in 1...9 {
-    for j in 1...9 {
-        temp = i * j
-        print("\(i) x \(j) = \(temp)")
-    }
-    print("\n")
- }
+ var arr_4 = [1,6,4,3,2,7,5,8,9]
+ 
+ (1...9)
+ 
+ 
  
  //Q5. 최댓값 구하기
- let array_2 = [1,3,5,4,2]
- var sum_2 = 0
- var m = -1
+ let array_2 = [1,3,5,4,2,10,9,22,-12,3]
  
- for i in array {
-    m=max(m, i)
+ var res_5 = array_2.reduce(-9876) { (Result, a:Int) -> Int in
+    print("now : \(a)")
+    if Result < a {
+        return a
+    }
+    else {
+        return Result
+    }
  }
- print(m)
+ 
+ print(res_5)
  
  
  
